@@ -1,5 +1,3 @@
-require_relative 'label'
-
 class Label < Item
   attr_accessor :title, :color
   attr_reader :items
@@ -12,6 +10,5 @@ class Label < Item
     @items = []
   end
 
-  def add_item(item)
-  end
+  def add_item(item); end
 end
