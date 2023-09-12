@@ -11,9 +11,19 @@ class Main
   end
 
   def run_method
-    show_menu
-    user_choice = gets.chomp
-    send(select_option(user_choice))
+    loop do
+      show_menu
+      user_choice = gets.chomp
+      select_option(user_choice)
+      method = select_option(user_choice)[user_choice]
+      if method.nil?
+        puts 'Invalid option, please try again!'
+        puts
+        show_menu
+      # else
+        # send(method)
+      end
+    end
   end
 end
 
