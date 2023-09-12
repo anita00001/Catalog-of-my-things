@@ -14,12 +14,6 @@ CREATE TABLE source (
      name VARCHAR(255)
 );
 
-CREATE TABLE label (
-    id SERIAL PRIMARY KEY,
-    title VARCHAR(255),
-    color VARCHAR(255)
-);
-
 CREATE TABLE item (
        id SERIAL PRIMARY KEY,
        genre_id INT,
@@ -35,14 +29,6 @@ CREATE TABLE item (
        CHECK (publish_date IS NOT NULL),
        CHECK (publish_date <= CURRENT_DATE),
        CHECK (archived IN (TRUE, FALSE))
-);
-
-CREATE TABLE book (
-       id SERIAL PRIMARY KEY,
-       item_id INT UNIQUE,
-       publisher VARCHAR(255),
-       cover_state VARCHAR(255),
-       FOREIGN KEY (item_id) REFERENCES items(id)
 );
 
 CREATE TABLE music_album (
