@@ -9,7 +9,7 @@ class Label < Item
     @color = color
     @items = []
   end
-
+  
   def add_item(item)
     item.label = self
     @items << item unless @items.include?(item)
