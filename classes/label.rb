@@ -1,5 +1,3 @@
-require_relative 'label'
-
 class Label < Item
   attr_accessor :title, :color
   attr_reader :items
@@ -13,5 +11,7 @@ class Label < Item
   end
 
   def add_item(item)
+    item.label = self
+    @items << item unless @items.include?(item)
   end
 end
