@@ -1,5 +1,5 @@
 class Genre
-  attr_accessor :id, :name, :items
+  attr_accessor :id, :name
 
   def initialize(id, name)
     @id = id
@@ -9,5 +9,6 @@ class Genre
 
   def add_item(item)
     @items << item
+    item.genre = self
   end
 end
