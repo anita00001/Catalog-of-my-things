@@ -2,14 +2,15 @@ class Item
   attr_accessor :id, :genre, :author, :source, :label, :publish_date
   attr_reader :archive
 
-  def initialize(id, genre, author, source, label, publish_date, archive: false)
-    @id = id
-    @genre = genre
-    @author = author
-    @source = source
-    @label = label
-    @publish_date = publish_date
-    @archive = archive
+
+  def initialize(params)
+    @id = params[:id]
+    @genre = params[:genre]
+    @author = params[:author]
+    @source = params[:source]
+    @label = params[:label]
+    @publish_date = params[:publish_date]
+    @archive = params.fetch(:archive, false)
   end
 
   def can_be_archived?
@@ -17,8 +18,8 @@ class Item
   end
 
   def move_to_archive
-    if can_be_archived?
-      @archived = true
-    end
+    return unless can_be_archived?
+
+    @archived = true
   end
 end
