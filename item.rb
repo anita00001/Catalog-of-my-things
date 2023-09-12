@@ -2,7 +2,6 @@ class Item
   attr_accessor :id, :genre, :author, :source, :label, :publish_date
   attr_reader :archive
 
-
   def initialize(params)
     @id = params[:id]
     @genre = params[:genre]
