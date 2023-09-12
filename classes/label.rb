@@ -14,4 +14,18 @@ class Label < Item
     item.label = self
     @items << item unless @items.include?(item)
   end
+
+  def to_s
+    "Id: #{@id}, Title: #{@title}, Color: #{@color}"
+  end
+
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
+      'id' => @id,
+      'title' => @title,
+      'color' => @color,
+      'items' => @items
+    }.to_json(*args)
+  end
 end
