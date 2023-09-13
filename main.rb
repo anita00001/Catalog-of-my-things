@@ -15,7 +15,7 @@ class Main
   def run_method
     loop do
       show_menu
-      user_choice = gets.chomp.to_i
+      user_choice = gets.chomp
       method = select_option(user_choice)[user_choice]
       if method.nil?
         puts 'Invalid option, please try again!'
