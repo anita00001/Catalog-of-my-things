@@ -14,6 +14,7 @@ module LabelModule
       new_label.add_item(item)
       @labels << new_label
     end
+    puts 'Label created successfully!'
   end
 
   def list_labels
