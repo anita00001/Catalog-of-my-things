@@ -1,11 +1,12 @@
 require_relative '../classes/game'
+require 'date'
 
 module GameModule
   def create_game
     puts 'Enter game details'
 
-    print 'ID: '
-    id = gets.chomp.to_i
+    # print 'ID: '
+    # id = gets.chomp.to_i
 
     print 'Publish date (YYYY-MM-DD): '
     publish_date = Date.parse(gets.chomp)
@@ -17,7 +18,7 @@ module GameModule
     print 'Last played Date (YYY-MM-DD): '
     last_played_at = Date.parse(gets.chomp)
 
-    new_game = Game.new(id, publish_date, multiplayer, last_played_at)
+    new_game = Game.new(publish_date, multiplayer, last_played_at)
     @games << new_game
 
     puts 'Game created and added to collection'
@@ -25,10 +26,11 @@ module GameModule
 
   def list_games
     puts 'List of games: '
-    @games.each do |game|
+    @games.each_with_index do |game, index|
       last_played_format = game.last_played_at.strftime('%Y-%m-%d')
       multiplayer_display = game.multiplayer ? 'true' : 'false'
-      puts "ID: #{game.id}, Multiplayer: #{multiplayer_display}, Last played date: #{last_played_format}"
+      # puts "ID: #{game.id}, Multiplayer: #{multiplayer_display}, Last played date: #{last_played_format}"
+      puts "[#{index + 1}] [Game] #{game}"
     end
   end
 end
