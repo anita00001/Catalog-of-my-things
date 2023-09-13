@@ -1,16 +1,25 @@
 module Options
   def select_option(_user_choice)
     {
-      '1' => :list_all_books,
-      '2' => :list_all_music_albums,
-      '3' => :list_all_games,
-      '4' => :list_all_genres,
-      '5' => :list_all_labels,
-      '6' => :list_all_authors,
-      '7' => :add_book,
-      '8' => :add_music_album,
-      '9' => :add_game,
-      '10' => :exit
+      '1' => :create_book,
+      '2' => :create_label,
+
+      '3' => :create_music_album,
+      '4' => :create_genre,
+
+      '5' => :create_game,
+      '6' => :create_author,
+
+      '7' => :list_books,
+      '8' => :list_labels,
+
+      '9' => :list_music_album,
+      '10' => :list_genres,
+
+      '11' => :list_games,
+      '12' => :list_authors,
+
+      '13' => :exit
     }
   end
 end
