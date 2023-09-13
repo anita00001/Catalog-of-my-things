@@ -52,3 +52,18 @@ CREATE TABLE game (
        last_played_at DATE,
        FOREIGN KEY (item_id) REFERENCES items(id)
 );
+
+CREATE TABLE book (
+       id SERIAL PRIMARY KEY,
+       item_id INT UNIQUE,
+       publisher VARCHAR(255),
+       cover_state VARCHAR(255),
+       FOREIGN KEY (item_id) REFERENCES items(id)
+);
+
+
+CREATE TABLE label (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255),
+    color VARCHAR(255)
+);
