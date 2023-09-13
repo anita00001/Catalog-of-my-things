@@ -23,5 +23,6 @@ module MusicAlbum
     @music_albums. each do |music_album|
       on_spotify_display = music_album.on_spotify ? 'true' : 'false'
       puts "ID: #{music_album.id}, Pulish date: #{music_album.publish_date}, On Sportify: #{on_spotify_display}"
+    end
   end
 end

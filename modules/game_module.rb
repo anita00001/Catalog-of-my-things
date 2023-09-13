@@ -29,5 +29,6 @@ module GameModule
       last_played_format = game.last_played_at.strftime("%Y-%m-%d")
       multiplayer_display = game.multiplayer ? 'true' : 'false'
       puts "ID: #{game.id}, Multiplayer: #{multiplayer_display}, Last played date: #{last_played_format}"
+    end
   end
 end
