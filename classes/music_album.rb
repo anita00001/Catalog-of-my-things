@@ -18,19 +18,12 @@ class MusicAlbum < Item
     "ID: #{@id}, Pulish date: #{@publish_date}, On Sportify: #{@on_spotify}"
   end
 
-  def save_to_json(file_path)
-    music_album_data = {
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
       'id' => @id,
-      'publish_date' => @publish_date.to_s,
-      'on_spotify' => @on_spotify
-    }
-
-    File.open(file_path, 'a') do |file|
-      file.puts(music_album_data.to_json)
-    end
-  end
-
-  def save
-    SaveDataToFile.save_to_json('music_albums.json', [self])
+      'publish_date' => @publish_date,
+      'on_sportify' => @on_sportify
+    }.to_json(*args)
   end
 end
