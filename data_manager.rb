@@ -103,7 +103,7 @@ module DataManager
   end
 
   def create_music_album_object(music_album)
-    MusicAlbum.new(music_album['id'], music_album['publish_date'], music_album['on_sportify'])
+    MusicAlbum.new(music_album['publish_date'], music_album['on_sportify'])
   end
 
   def create_genre_object(genre)
