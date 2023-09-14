@@ -27,8 +27,8 @@ module GameModule
   def list_games
     puts 'List of games: '
     @games.each_with_index do |game, index|
-      last_played_format = game.last_played_at.strftime('%Y-%m-%d')
-      multiplayer_display = game.multiplayer ? 'true' : 'false'
+      game.last_played_at.strftime('%Y-%m-%d')
+      game.multiplayer ? 'true' : 'false'
       # puts "ID: #{game.id}, Multiplayer: #{multiplayer_display}, Last played date: #{last_played_format}"
       puts "[#{index + 1}] [Game] #{game}"
     end

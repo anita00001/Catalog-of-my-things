@@ -24,7 +24,7 @@ module MusicAlbumModule
   def list_music_album
     puts 'List of music albums: '
     @MusicAlbum.each_with_index do |music_album, index|
-      on_spotify_display = music_album.on_spotify ? 'true' : 'false'
+      music_album.on_spotify ? 'true' : 'false'
       # puts "ID: #{music_album.id}, Pulish date: #{music_album.publish_date}, On Sportify: #{on_spotify_display}"
       puts "[#{index + 1}] [Music Album] #{music_album}"
     end
