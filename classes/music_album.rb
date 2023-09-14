@@ -3,13 +3,19 @@ require_relative 'item'
 class MusicAlbum < Item
   attr_accessor :on_spotify
 
-  def initialize(id, publish_date, on_spotify)
-    super(id, publish_date)
+  def initialize(publish_date, on_spotify)
+    super(id)
+    @id = Random.rand(100...10_000)
+    @publish_date = publish_date
     @on_spotify = on_spotify
   end
 
   def can_be_archived?
     super && @on_spotify
+  end
+
+  def to_s
+    "ID: #{@id}, Pulish date: #{@publish_date}, On Sportify: #{@on_spotify}"
   end
 
   def save_to_json(file_path)

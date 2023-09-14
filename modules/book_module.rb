@@ -6,7 +6,7 @@ module BookModule
     publish_date = gets.chomp
     puts 'Publisher name:'
     publisher = gets.chomp
-    puts 'Cover state:'
+    puts 'Cover state(good/bad):'
     cover_state = gets.chomp
     @books << Book.new(publish_date, publisher, cover_state)
     puts 'Book created successfully!'
@@ -14,7 +14,7 @@ module BookModule
 
   def list_books
     @books.each_with_index do |book, index|
-      puts "#{index + 1} #{book}"
+      puts "[#{index + 1}] [Book] #{book}"
     end
   end
 end
