@@ -107,6 +107,6 @@ module DataManager
   end
 
   def create_genre_object(genre)
-    Genre.new(genre['id'], genre['name'])
+    Genre.new(genre['name'])
   end
 end
