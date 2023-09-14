@@ -52,8 +52,8 @@ module DataManager
 
   def load_games
     @games = []
-    if File.exist?(BOOK_FILE)
-      JSON.parse(File.read(BOOK_FILE)).map do |game|
+    if File.exist?(GAME_FILE)
+      JSON.parse(File.read(GAME_FILE)).map do |game|
         game_object = create_game_object(game)
         @games << game_object
         @items << game_object
