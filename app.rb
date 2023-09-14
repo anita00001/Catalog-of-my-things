@@ -7,6 +7,7 @@ require_relative 'modules/music_album_module'
 
 require_relative 'modules/game_module'
 require_relative 'modules/author_module'
+require_relative 'modules/genre_module'
 
 require_relative 'modules/option'
 
@@ -18,6 +19,7 @@ class App
   include MusicAlbumModule
   include GameModule
   include AuthorModule
+  include GenreModule
 
   include DataManager
 
@@ -30,6 +32,7 @@ class App
     load_books
     load_labels
     load_authors
+    load_genres
   end
 
   def save

@@ -12,18 +12,16 @@ class Genre
     item.genre = self
   end
 
-  def save_to_json(file_path)
-    genre_data = {
-      'id' => @id,
-      'name' => @name
-    }
-
-    File.open(file_path, 'a') do |file|
-      file.puts(genre_data.to_json)
-    end
+  def to_s
+    "ID: #{@id}, Name: #{@name}"
   end
 
-  def save
-    SaveDataToFile.save_to_json('genres.json', [self])
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
+      'id' => @id,
+      'name' => @name,
+      'items' => @items.map { |item| item.to_json }
+    }.to_json(*args)
   end
 end
