@@ -1,8 +1,11 @@
-class Author
+require_relative 'item'
+
+class Author < Item
   attr_accessor :f_name, :l_name
   attr_reader :items
 
   def initialize(f_name, l_name)
+    super(id)
     @id = Random.rand(1...1000)
     @f_name = f_name
     @l_name = l_name
