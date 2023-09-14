@@ -6,6 +6,7 @@ require_relative 'modules/label_module'
 require_relative 'modules/music_album_module'
 
 require_relative 'modules/game_module'
+require_relative 'modules/author_module'
 
 require_relative 'modules/option'
 
@@ -16,6 +17,7 @@ class App
   include LabelModule
   include MusicAlbumModule
   include GameModule
+  include AuthorModule
 
   include DataManager
 
@@ -25,6 +27,7 @@ class App
     @games = []
     load_books
     load_labels
+    load_authors
   end
 
   def save
