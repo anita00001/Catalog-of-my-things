@@ -25,7 +25,7 @@ class Game < Item
       JSON.create_id => self.class.name,
       'id' => @id,
       'multiplayer' => @multiplayer,
-      'Last_played_date' => @last_played_at,
+      'Last_played_date' => @last_played_at
     }.to_json(*args)
   end
 end

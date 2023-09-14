@@ -5,7 +5,7 @@ LABEL_FILE = 'data/labels.json'.freeze
 AUTHOR_FILE = 'data/authors.json'.freeze
 GAME_FILE = 'data/games.json'.freeze
 MUSIC_FILE = 'data/musics.json'.freeze
-GENRE_FILE = 'data/genres.json'
+GENRE_FILE = 'data/genres.json'.freeze
 
 module DataManager
   def save_files

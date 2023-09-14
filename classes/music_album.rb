@@ -17,7 +17,7 @@ class MusicAlbum < Item
   def to_s
     "ID: #{@id}, Publish date: #{@publish_date}, On Sportify: #{@on_spotify}"
   end
-  
+
   def to_json(*args)
     {
       JSON.create_id => self.class.name,

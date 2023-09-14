@@ -16,7 +16,7 @@ module MusicAlbumModule
     on_spotify = on_spotify_input == 'true'
 
     new_music_album = MusicAlbum.new(publish_date, on_spotify)
-    @music_album<< new_music_album
+    @music_album << new_music_album
 
     puts 'Music album created and added'
   end

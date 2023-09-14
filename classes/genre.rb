@@ -18,13 +18,13 @@ class Genre < Item
   def to_s
     "ID: #{@id}, Name: #{@name}"
   end
-  
+
   def to_json(*args)
     {
       JSON.create_id => self.class.name,
       'id' => @id,
       'name' => @name,
-      'items' => @items.map { |item| item.to_json }
+      'items' => @items.map(&:to_json)
     }.to_json(*args)
   end
 end

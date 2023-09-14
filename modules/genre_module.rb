@@ -10,7 +10,7 @@ module GenreModule
     new_genre = Genre.new(name)
     @genres << new_genre
 
-    puts 'Genre created successfully' 
+    puts 'Genre created successfully'
   end
 
   def list_genres
