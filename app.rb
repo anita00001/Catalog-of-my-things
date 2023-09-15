@@ -23,8 +23,10 @@ class App
 
   def initialize
     @items = []
-    @music_album = []
-    @games = []
+    # @music_album = []
+    # @games = []
+    load_games
+    load_music_album
     load_books
     load_labels
     load_authors

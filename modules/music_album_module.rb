@@ -16,17 +16,14 @@ module MusicAlbumModule
     on_spotify = on_spotify_input == 'true'
 
     new_music_album = MusicAlbum.new(publish_date, on_spotify)
-    @MusicAlbum << new_music_album
+    @music_album << new_music_album
 
     puts 'Music album created and added'
   end
 
   def list_music_album
-    puts 'List of music albums: '
-    @MusicAlbum.each_with_index do |music_album, index|
-      music_album.on_spotify ? 'true' : 'false'
-      # puts "ID: #{music_album.id}, Pulish date: #{music_album.publish_date}, On Sportify: #{on_spotify_display}"
-      puts "[#{index + 1}] [Music Album] #{music_album}"
+    @music_album.each_with_index do |music_album, index|
+      puts "#{index + 1}: #{music_album}"
     end
   end
 end
