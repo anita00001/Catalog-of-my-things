@@ -1,29 +1,30 @@
-class Genre
+require_relative 'item'
+
+class Genre < Item
   attr_accessor :id, :name
 
-  def initialize(id, name)
-    @id = id
+  def initialize(name)
+    super(id)
+    @id = rand(100...10_000)
     @name = name
     @items = []
   end
 
   def add_item(item)
-    @items << item
     item.genre = self
+    @items << item unless @items.include?(item)
   end
 
-  def save_to_json(file_path)
-    genre_data = {
+  def to_s
+    "ID: #{@id}, Name: #{@name}"
+  end
+
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
       'id' => @id,
-      'name' => @name
-    }
-
-    File.open(file_path, 'a') do |file|
-      file.puts(genre_data.to_json)
-    end
-  end
-
-  def save
-    SaveDataToFile.save_to_json('genres.json', [self])
+      'name' => @name,
+      'items' => @items.map(&:to_json)
+    }.to_json(*args)
   end
 end

@@ -5,6 +5,7 @@ LABEL_FILE = 'data/labels.json'.freeze
 AUTHOR_FILE = 'data/authors.json'.freeze
 GAME_FILE = 'data/games.json'.freeze
 MUSIC_FILE = 'data/musics.json'.freeze
+GENRE_FILE = 'data/genres.json'.freeze
 
 module DataManager
   def save_files
@@ -16,6 +17,7 @@ module DataManager
     File.write(AUTHOR_FILE, @authors.to_json)
     File.write(GAME_FILE, @games.to_json)
     File.write(MUSIC_FILE, @music_album.to_json)
+    File.write(GENRE_FILE, @genres.to_json)
   end
 
   # rubocop:disable Style/GuardClause
@@ -67,6 +69,17 @@ module DataManager
       JSON.parse(File.read(MUSIC_FILE)).map do |music|
         music_object = create_music_album_object(music)
         @music_album << music_object
+        @items << music_object
+      end
+    end
+  end
+
+  def load_genres
+    @genres = []
+    if File.exist?(GENRE_FILE)
+      JSON.parse(File.read(GENRE_FILE)).map do |genre|
+        genre_object = create_genre_object(genre)
+        @genres << genre_object
       end
     end
   end
@@ -91,6 +104,10 @@ module DataManager
   end
 
   def create_music_album_object(music_album)
-    MusicAlbum.new(music_album['id'], music_album['publish_date'], music_album['on_sportify'])
+    MusicAlbum.new(music_album['publish_date'], music_album['on_spotify'])
+  end
+
+  def create_genre_object(genre)
+    Genre.new(genre['name'])
   end
 end

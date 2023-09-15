@@ -3,8 +3,9 @@ require_relative 'item'
 class MusicAlbum < Item
   attr_accessor :on_spotify
 
-  def initialize(publish_date, on_spotify, id = Random.rand(100...10_000))
+  def initialize(publish_date, on_spotify)
     super(id)
+    @id = Random.rand(100...10_000)
     @publish_date = publish_date
     @on_spotify = on_spotify
   end
@@ -14,7 +15,7 @@ class MusicAlbum < Item
   end
 
   def to_s
-    "ID: #{@id}, Pulish date: #{@publish_date}, On Sportify: #{@on_spotify}"
+    "ID: #{@id}, Publish date: #{@publish_date}, On Sportify: #{@on_spotify}"
   end
 
   def to_json(*args)
@@ -22,7 +23,7 @@ class MusicAlbum < Item
       JSON.create_id => self.class.name,
       'id' => @id,
       'publish_date' => @publish_date,
-      'on_sportify' => @on_sportify
+      'on_spotify' => @on_spotify
     }.to_json(*args)
   end
 end
