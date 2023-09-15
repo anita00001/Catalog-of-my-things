@@ -26,6 +26,8 @@
 > **Catalog Of My Things** is an app that will help user to keep a record of different types of things they own: books, music albums, and games. The data is stored in JSON files. There is also a database with tables structure analogical to program's class structure. *Everything will be based on the UML class diagram presented below.*
 ![UML Diagram: Catalog of my things](image.png)
 
+> Want to know more about the project? Click [here](https://drive.google.com/file/d/1dj3dokCDskZCAW9-a-UktDEYfbtqAXGF/view?usp=sharing)
+
 ## 🛠 Built With <a name="built-with"></a>
 > This project is built with Ruby.
 
@@ -158,11 +160,6 @@ psql
 > - LinkedIn: [@mosidrum](https://linkedin.com/in/mosidrum/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-##  Video Presentation <a name="future-features"></a>
-> **Here is our video presentation of the project**
-> https://drive.google.com/file/d/1kQ1SHE0oIx22Iw-zMwqt8MGuJ7IsuZN3/view?usp=sharing
-
 
 ## 🔭 Future Features <a name="future-features"></a>
 
