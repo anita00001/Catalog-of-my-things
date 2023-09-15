@@ -20,7 +20,6 @@ class Main
       if method.nil?
         puts 'Invalid option, please try again!'
         puts
-        # show_menu
       else
         @app.send(method)
         @app.save
