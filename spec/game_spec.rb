@@ -33,8 +33,10 @@ describe Game do
 
   context 'when converting to string' do
     it 'should return a string with the game ID, Published date, multiplayer status, and last played date' do
-      expected_string = "ID: #{game.id}, Published date: #{game.publish_date}, Multiplayer: #{game.multiplayer}, Last played date: #{game.last_played_at}"
-      expect(game.to_s).to eq(expected_string)
+      exp_str = "ID: #{game.id}, Published date: #{game.publish_date}, " \
+                "Multiplayer: #{game.multiplayer}, " \
+                "Last played date: #{game.last_played_at}"
+      expect(game.to_s).to eq(exp_str)
     end
   end
 
