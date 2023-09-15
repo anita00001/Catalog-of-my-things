@@ -5,7 +5,7 @@ class Genre < Item
 
   def initialize(name)
     super(id)
-    @id = rand(100...10_000)
+    @id = id.nil? ? Random.rand(100..10_000) : id
     @name = name
     @items = []
   end

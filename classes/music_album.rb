@@ -5,7 +5,7 @@ class MusicAlbum < Item
 
   def initialize(publish_date, on_spotify)
     super(id)
-    @id = Random.rand(100...10_000)
+    @id = id.nil? ? Random.rand(100..10_000) : id
     @publish_date = publish_date
     @on_spotify = on_spotify
   end

@@ -5,9 +5,6 @@ module MusicAlbumModule
   def create_music_album
     puts 'Enter music album details: '
 
-    # print 'ID: '
-    # id = gets.chomp
-
     print 'Enter published date (YYYY-MM-DD): '
     publish_date = Date.parse(gets.chomp)
 
@@ -23,7 +20,7 @@ module MusicAlbumModule
 
   def list_music_album
     @music_album.each_with_index do |music_album, index|
-      puts "#{index + 1}: #{music_album}"
+      puts "[#{index + 1}] [Music Album] #{music_album}"
     end
   end
 end
