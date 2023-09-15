@@ -69,6 +69,7 @@ module DataManager
       JSON.parse(File.read(MUSIC_FILE)).map do |music|
         music_object = create_music_album_object(music)
         @music_album << music_object
+        @items << music_object
       end
     end
   end
