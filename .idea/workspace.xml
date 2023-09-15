@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0552b6b3-4ffc-47d4-8ed8-69ccd8a1b6aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/genre.rb" beforeDir="false" afterPath="$PROJECT_DIR$/classes/genre.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/music_album.rb" beforeDir="false" afterPath="$PROJECT_DIR$/classes/music_album.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/genre_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/genre_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/music_album_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/music_album_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,23 +26,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "code-check",
-    "last_opened_file_path": "C:/Users/user/Documents/Microverse/Module4/Catalog-of-my-things",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;code-check&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Documents/Microverse/Module4/Catalog-of-my-things&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
       <list>
@@ -192,6 +188,7 @@
       <updated>1694686753612</updated>
       <workItem from="1694686754977" duration="8611000" />
       <workItem from="1694707890222" duration="341000" />
+      <workItem from="1694709578171" duration="176000" />
     </task>
     <servers />
   </component>

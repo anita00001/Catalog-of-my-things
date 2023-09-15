@@ -5,7 +5,7 @@ LABEL_FILE = 'data/labels.json'.freeze
 AUTHOR_FILE = 'data/authors.json'.freeze
 GAME_FILE = 'data/games.json'.freeze
 MUSIC_FILE = 'data/musics.json'.freeze
-GENRE_FILE = 'data/genres.json'.freeze
+GENRE_FILE = 'data/genres.json'
 
 module DataManager
   def save_files
@@ -103,7 +103,7 @@ module DataManager
   end
 
   def create_music_album_object(music_album)
-    MusicAlbum.new(music_album['publish_date'], music_album['on_sportify'])
+    MusicAlbum.new(music_album['publish_date'], music_album['on_spotify'])
   end
 
   def create_genre_object(genre)

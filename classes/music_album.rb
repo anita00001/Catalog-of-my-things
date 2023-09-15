@@ -9,6 +9,7 @@ class MusicAlbum < Item
     @publish_date = publish_date
     @on_spotify = on_spotify
   end
+  
 
   def can_be_archived?
     super && @on_spotify
@@ -23,7 +24,7 @@ class MusicAlbum < Item
       JSON.create_id => self.class.name,
       'id' => @id,
       'publish_date' => @publish_date,
-      'on_sportify' => @on_sportify
+      'on_spotify' => @on_spotify
     }.to_json(*args)
   end
 end

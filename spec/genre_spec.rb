@@ -11,5 +11,5 @@ describe Genre do
       genre.add_item(item)
       expect(genre.instance_variable_get(:@items)).to include(item)
     end
-  end
+  endruby main.
 end
