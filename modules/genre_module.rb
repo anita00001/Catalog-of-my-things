@@ -14,7 +14,7 @@ module GenreModule
     list_items
     item_idx = gets.chomp.to_i
     new_genre.add_item(@items[item_idx - 1])
-    puts 'Genre created successfully' 
+    puts 'Genre created successfully'
   end
 
   def list_genres

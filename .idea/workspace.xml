@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0552b6b3-4ffc-47d4-8ed8-69ccd8a1b6aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/music_album.rb" beforeDir="false" afterPath="$PROJECT_DIR$/classes/music_album.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_manager.rb" beforeDir="false" afterPath="$PROJECT_DIR$/data_manager.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/genre_module.rb" beforeDir="false" afterPath="$PROJECT_DIR$/modules/genre_module.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/genre_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/genre_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +193,7 @@
       <workItem from="1694686754977" duration="8611000" />
       <workItem from="1694707890222" duration="341000" />
       <workItem from="1694709578171" duration="176000" />
+      <workItem from="1694748579960" duration="957000" />
     </task>
     <servers />
   </component>

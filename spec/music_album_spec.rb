@@ -41,11 +41,11 @@ describe MusicAlbum do
   describe '#to_json' do
     it 'should return a JSON representation of the album' do
       album.id = 123
-      album.instance_variable_set(:@on_sportify, true)
+      album.instance_variable_set(:@on_spotify, true)
       json_data = JSON.parse(album.to_json)
       expect(json_data['id']).to eq(album.id)
       expect(json_data['publish_date']).to eq(album.publish_date)
-      expect(json_data['on_sportify']).to be true
+      expect(json_data['on_spotify']).to be true
     end
   end
 end
