@@ -4,7 +4,7 @@ module GenreModule
   def create_genre
     puts 'Enter genre name: '
 
-    print 'Name: '
+    puts 'Name: '
     name = gets.chomp
 
     new_genre = Genre.new(name)
@@ -19,7 +19,7 @@ module GenreModule
 
   def list_genres
     @genres.each_with_index do |genre, index|
-      puts "#{index + 1}, Genre ID: #{genre.id}, Name: #{genre.name}"
+      puts "[#{index + 1}] [Genre] #{genre}"
     end
   end
 end

@@ -19,7 +19,7 @@ module AuthorModule
 
   def list_authors
     @authors.each_with_index do |author, index|
-      puts "#{index + 1}) Author Name: '#{author.f_name} #{author.l_name}'"
+      puts "[#{index + 1}] [Author] Author Name: #{author.f_name} #{author.l_name}"
     end
   end
 end

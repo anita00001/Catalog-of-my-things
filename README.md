@@ -137,6 +137,14 @@ psql
   rubocop
 ```
 
+```sh
+  gem install rspec
+```
+
+```sh
+  rspec
+```
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Anita Sharma**
@@ -145,7 +153,7 @@ psql
 > - LinkedIn: [anitaa-sharmaa](https://www.linkedin.com/in/anitaa-sharmaa/)
 > - Twitter: [@anitaa_sharmaa](https://twitter.com/anitaa_sharmaa)
 
-👤 **Author2**
+👤 **Isaac Ayodele**
 
 - GitHub: [@mosidrum](https://github.com/mosidrum)
 - Twitter: [@mosidrum](https://twitter.com/mosidrum)

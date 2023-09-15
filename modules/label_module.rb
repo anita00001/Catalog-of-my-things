@@ -22,7 +22,7 @@ module LabelModule
 
   def list_labels
     @labels.each_with_index do |label, index|
-      puts "#{index + 1} #{label}"
+      puts "[#{index + 1}] [Label] #{label}"
     end
   end
 end

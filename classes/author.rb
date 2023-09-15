@@ -6,7 +6,7 @@ class Author < Item
 
   def initialize(f_name, l_name)
     super(id)
-    @id = Random.rand(1...1000)
+    @id = id.nil? ? Random.rand(100..10_000) : id
     @f_name = f_name
     @l_name = l_name
     @items = []

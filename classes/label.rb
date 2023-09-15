@@ -4,7 +4,7 @@ class Label < Item
 
   def initialize(title, color)
     super(id)
-    @id = Random.rand(1...1000)
+    @id = id.nil? ? Random.rand(100..10_000) : id
     @title = title
     @color = color
     @items = []
