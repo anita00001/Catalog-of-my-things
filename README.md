@@ -21,7 +21,7 @@
 - [📝 License](#license)
 
 
-# 📖 [Catalog Of My Things] <a name="about-project"></a>
+# 📖 Catalog Of My Things <a name="about-project"></a>
 
 > **Catalog Of My Things** is an app that will help user to keep a record of different types of things they own: books, music albums, and games. The data is stored in JSON files. There is also a database with tables structure analogical to program's class structure. *Everything will be based on the UML class diagram presented below.*
 ![UML Diagram: Catalog of my things](image.png)
@@ -77,8 +77,6 @@
 >   - Has tables that is analogical to the structure of classes in the app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -155,9 +153,9 @@ psql
 
 👤 **Isaac Ayodele**
 
-- GitHub: [@mosidrum](https://github.com/mosidrum)
-- Twitter: [@mosidrum](https://twitter.com/mosidrum)
-- LinkedIn: [@mosidrum](https://linkedin.com/in/mosidrum/)
+> - GitHub: [@mosidrum](https://github.com/mosidrum)
+> - Twitter: [@mosidrum](https://twitter.com/mosidrum)
+> - LinkedIn: [@mosidrum](https://linkedin.com/in/mosidrum/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
