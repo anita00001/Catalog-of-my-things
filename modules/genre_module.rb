@@ -10,10 +10,12 @@ module GenreModule
     new_genre = Genre.new(name)
     @genres << new_genre
 
-    puts 'Select item to add to genre [Choose by index] (NOT ID): '
-    list_items
-    item_idx = gets.chomp.to_i
-    new_genre.add_item(@items[item_idx - 1])
+    unless @items.empty?
+      puts 'Select item to add to genre [Choose by index] (NOT ID): '
+      list_items
+      item_idx = gets.chomp.to_i
+      new_genre.add_item(@items[item_idx - 1])
+    end
     puts 'Genre created successfully'
   end
 

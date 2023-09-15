@@ -13,10 +13,12 @@ module LabelModule
     new_label = Label.new(title, color)
     @labels << new_label
 
-    puts 'Select item to add to label [Choose by index] (NOT ID): '
-    list_items
-    item_idx = gets.chomp.to_i
-    new_label.add_item(@items[item_idx - 1])
+    unless @items.empty?
+      puts 'Select item to add to label [Choose by index] (NOT ID): '
+      list_items
+      item_idx = gets.chomp.to_i
+      new_label.add_item(@items[item_idx - 1])
+    end
     puts 'Label created successfully!'
   end
 

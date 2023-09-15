@@ -10,10 +10,12 @@ module AuthorModule
     new_author = Author.new(f_name, l_name)
     @authors << new_author
 
-    puts 'Select item to add to author [Choose by index] (NOT ID): '
-    list_items
-    item_idx = gets.chomp.to_i
-    new_author.add_item(@items[item_idx - 1])
+    unless @items.empty?
+      puts 'Select item to add to author [Choose by index] (NOT ID): '
+      list_items
+      item_idx = gets.chomp.to_i
+      new_author.add_item(@items[item_idx - 1])
+    end
     puts 'Author created successfully!'
   end
 
